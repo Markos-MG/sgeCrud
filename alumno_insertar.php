@@ -5,7 +5,7 @@ $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $email = $_POST['email'];
 
-$sql = "INSERT INTO alumno (nombre, apellido, email) VALUES (?, ?, ?)";
+$sql = "INSERT INTO alumno (nombre, apellido1, email) VALUES (?, ?, ?)";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("sss", $nombre, $apellido, $email);
 
