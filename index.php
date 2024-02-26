@@ -8,8 +8,8 @@
 <body>
 <h1>Gestión de Profesores o Alumnos</h1>
 <form action="#" method="post">
-    <input type="submit" name="profesores" value="Gestionar Profesores" formaction="Profesores.php">
-    <input type="submit" name="alumnos" value="Gestionar Alumnos" formaction="Alumnos.php">
+    <input type="submit" name="profesores" value="Gestionar Profesores" formaction="profesores_html.php">
+    <input type="submit" name="alumnos" value="Gestionar Alumnos" formaction="alumnos_html.php">
 </form>
 </body>
 </html>
