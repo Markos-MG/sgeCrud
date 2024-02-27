@@ -24,7 +24,7 @@
     <a href="alumno_crear.php" class="btn btn-primary">Añadir Alumno</a>
     <a href="buscar_alumno.php" class="btn btn-primary">Buscar Alumno</a>
     <a href="modificar_alumno.php" class="btn btn-primary">Modificar Alumno</a>
-    <a href="borrar_alumno.php" class="btn btn-primary">Borrar Alumno</a>
+    <a href="eliminar_alumno.php" class="btn btn-primary">Borrar Alumno</a>
     <a href="mostrar_todos_alumnos.php" class="btn btn-primary">Mostrar Todos los Alumnos</a>
     <a href="index.php" class="btn btn-secondary mt-3">Volver a Inicio</a>
 </div>
