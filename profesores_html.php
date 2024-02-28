@@ -21,12 +21,12 @@
 <body>
 <div class="container">
     <h1 class="mt-4">Gestión de Profesores</h1>
-    <a href="profesor_crear.php">Añadir Profesor</a><br>
-    <a href="mostrar_profesor.php">Buscar Profesor</a><br>
-    <a href="modificar_profesor.php">Modificar Profesor</a><br>
-    <a href="eliminar_profesor.php">Borrar Profesor</a><br>
-    <a href="mostrar_todos_profesores.php">Mostrar Todos los Profesores</a><br>
-    <a href="index.php">Volver a Inicio</a>
+    <a href="profesor_crear.php" class="btn btn-primary">Añadir Profesor</a><br>
+    <a href="buscar_profesor.php" class="btn btn-primary">Buscar Profesor</a><br>
+    <a href="modificar_profesor.php" class="btn btn-primary">Modificar Profesor</a><br>
+    <a href="eliminar_profesor.php" class="btn btn-primary">Borrar Profesor</a><br>
+    <a href="mostrar_todos_profesores.php" class="btn btn-primary">Mostrar Todos los Profesores</a><br>
+    <a href="index.php" class="btn btn-secondary mt-3">Volver a Inicio</a>
 </div>
 </body>
 </html>

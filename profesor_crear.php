@@ -9,12 +9,20 @@
     <h2>Agregar Profesor</h2>
     <form action="agregar_profesor.php" method="post">
         <div class="form-group">
+            <label for="nif">NIF:</label>
+            <input type="text" class="form-control" id="nif" name="nif" required>
+        </div>
+        <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input type="text" class="form-control" id="nombre" name="nombre" required>
         </div>
         <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" class="form-control" id="apellido" name="apellido" required>
+            <label for="apellido1">Apellido:</label>
+            <input type="text" class="form-control" id="apellido1" name="apellido1" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido2">Segundo apellido:</label>
+            <input type="text" class="form-control" id="apellido2" name="apellido2" required>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>

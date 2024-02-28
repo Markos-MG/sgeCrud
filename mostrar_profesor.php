@@ -1,14 +1,32 @@
-<!DOCTYPE html>
-<html>
-<body>
+<?php
+include 'conexion.php';
 
-<h2>Buscar Profesor</h2>
+if (isset($_POST['nif'])) {
+    $nif = $_POST['nif'];
 
-<form action="buscar_profesor.php" method="post">
-    <label for="nif">NIF:</label><br>
-    <input type="text" id="nif" name="nif"><br>
-    <input type="submit" value="Buscar">
-</form>
+    $sql = "SELECT nif, nombre, apellido1, apellido2, email FROM profesor WHERE nif = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $nif);
 
-</body>
-</html>
+    if ($stmt->execute()) {
+        $result = $stmt->get_result();
+        if ($result->num_rows > 0) {
+            echo "<table class='table'><thead><tr><th>NIF</th><th>Nombre</th><th>Apellido1</th><th>Apellido2</th><th>Email</th></tr></thead><tbody>";
+            while($row = $result->fetch_assoc()) {
+                echo "<tr><td>".$row["nif"]."</td><td>".$row["nombre"]."</td><td>".$row["apellido1"]."</td><td>".$row["apellido2"]."</td><td>".$row["email"]."</td></tr>";
+            }
+            echo "</tbody></table>";
+        } else {
+            echo "Profesor no encontrado.";
+        }
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+
+    $stmt->close();
+} else {
+    echo "Error: No se proporcionó un NIF.";
+}
+
+$conn->close();
+?>

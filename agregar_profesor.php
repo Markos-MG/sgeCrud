@@ -2,12 +2,14 @@
 include 'conexion.php';
 
 $nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
+$nif = $_POST['nif'];
+$apellido1 = $_POST['apellido1'];
+$apellido2 = $_POST['apellido2'];
 $email = $_POST['email'];
 
-$sql = "INSERT INTO profesor (nombre, apellido1, email) VALUES (?, ?, ?)";
+$sql = "INSERT INTO profesor (NIF, nombre, apellido1, apellido2, email) VALUES (?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("sss", $nombre, $apellido, $email);
+$stmt->bind_param("sssss", $nif, $nombre, $apellido1, $apellido2, $email);
 
 if ($stmt->execute()) {
     echo "Profesor agregado correctamente.";
