@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
+            background-color: #343a40; /* Fondo oscuro */
+            color: #fff; /* Color de texto principal */
             padding: 20px;
+            font-family: Arial, sans-serif; /* Fuente del texto */
         }
+
         h1 {
             margin-bottom: 20px;
+            color: #007bff; /* Color del título */
         }
+
         a {
             display: block;
             margin-bottom: 10px;
+            color: #007bff; /* Color de los enlaces */
+        }
+
+        a:hover {
+            color: #0056b3; /* Color de los enlaces al pasar el ratón */
+        }
+
+        .btn-primary, .btn-secondary {
+            background-color: #007bff; /* Color de fondo de los botones */
+            border-color: #007bff; /* Color del borde de los botones */
+            color: #fff; /* Color del texto de los botones */
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            background-color: #0056b3; /* Color de fondo de los botones al pasar el ratón */
+            border-color: #0056b3; /* Color del borde de los botones al pasar el ratón */
+        }
+
+        .mt-3 {
+            margin-top: 1rem; /* Espacio superior */
         }
     </style>
 </head>
@@ -30,3 +56,4 @@
 </div>
 </body>
 </html>
+
