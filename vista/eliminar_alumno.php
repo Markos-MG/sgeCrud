@@ -43,7 +43,7 @@
 
 <div class="container">
     <h2>Eliminar Alumno</h2>
-    <form action="borrar_alumno.php" method="post">
+    <form action="../controlador/borrar_alumno.php" method="post">
         <div class="form-group">
             <label for="nif">NIF:</label>
             <input type="text" class="form-control" id="nif" name="nif">

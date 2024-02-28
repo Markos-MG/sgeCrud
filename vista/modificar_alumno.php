@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Agregar Profesor</title>
+    <title>Modificar Alumno</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -11,18 +11,12 @@
             font-family: Arial, sans-serif; /* Fuente del texto */
         }
 
-        h2 {
-            margin-bottom: 20px;
-            color: #007bff; /* Color del título */
-        }
-
         label {
             margin-bottom: 5px;
             color: #007bff; /* Color de las etiquetas */
         }
 
-        input[type="text"],
-        input[type="email"] {
+        input[type="text"] {
             background-color: #444; /* Color de fondo del campo de texto */
             color: #fff; /* Color del texto del campo de texto */
             border-color: #007bff; /* Color del borde del campo de texto */
@@ -44,31 +38,21 @@
 <body>
 
 <div class="container">
-    <h2>Agregar Profesor</h2>
-    <form action="agregar_profesor.php" method="post">
-        <div class="form-group">
-            <label for="nif">NIF:</label>
-            <input type="text" class="form-control" id="nif" name="nif" required>
-        </div>
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="apellido1">Apellido:</label>
-            <input type="text" class="form-control" id="apellido1" name="apellido1" required>
-        </div>
-        <div class="form-group">
-            <label for="apellido2">Segundo apellido:</label>
-            <input type="text" class="form-control" id="apellido2" name="apellido2" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email">
-        </div>
-        <button type="submit" class="btn btn-primary">Agregar</button>
+    <form action="../controlador/modificacion_alumno.php" method="post">
+        <label for="nif">NIF del alumno a modificar:</label><br>
+        <input type="text" id="nif" name="nif"><br>
+        <label for="nombre">Nuevo nombre (opcional):</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido1">Nuevo primer apellido (opcional):</label><br>
+        <input type="text" id="apellido1" name="apellido1"><br>
+        <label for="apellido2">Nuevo segundo apellido (opcional):</label><br>
+        <input type="text" id="apellido2" name="apellido2"><br>
+        <label for="email">Nuevo email (opcional):</label><br>
+        <input type="text" id="email" name="email"><br>
+        <input type="submit" class="btn btn-primary" value="Modificar alumno">
     </form>
 </div>
 
 </body>
 </html>
+

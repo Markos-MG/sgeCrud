@@ -47,7 +47,7 @@
     <a href="modificar_profesor.php">Modificar Profesor</a>
     <a href="eliminar_profesor.php">Borrar Profesor</a>
     <a href="mostrar_todos_profesores.php">Mostrar Todos los Profesores</a>
-    <a href="index.php" class="btn btn-secondary mt-3">Volver a Inicio</a>
+    <a href="../index.php" class="btn btn-secondary mt-3">Volver a Inicio</a>
 </div>
 
 </body>

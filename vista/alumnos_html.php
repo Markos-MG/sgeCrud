@@ -52,7 +52,7 @@
     <a href="modificar_alumno.php" class="btn btn-primary">Modificar Alumno</a>
     <a href="eliminar_alumno.php" class="btn btn-primary">Borrar Alumno</a>
     <a href="mostrar_todos_alumnos.php" class="btn btn-primary">Mostrar Todos los Alumnos</a>
-    <a href="index.php" class="btn btn-secondary mt-3">Volver a Inicio</a>
+    <a href="../index.php" class="btn btn-secondary mt-3">Volver a Inicio</a>
 </div>
 </body>
 </html>

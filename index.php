@@ -35,8 +35,8 @@
 <div class="container">
     <h1>Gestión de Profesores o Alumnos</h1>
     <form action="#" method="post">
-        <input type="submit" name="profesores" value="Gestionar Profesores" formaction="profesores_html.php" class="btn btn-primary">
-        <input type="submit" name="alumnos" value="Gestionar Alumnos" formaction="alumnos_html.php" class="btn btn-primary">
+        <input type="submit" name="profesores" value="Gestionar Profesores" formaction="vista/profesores_html.php" class="btn btn-primary">
+        <input type="submit" name="alumnos" value="Gestionar Alumnos" formaction="vista/alumnos_html.php" class="btn btn-primary">
     </form>
 </div>
 </body>

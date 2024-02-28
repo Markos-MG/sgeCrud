@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Modificar Alumno</title>
+    <title>Modificar Profesor</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -38,8 +38,8 @@
 <body>
 
 <div class="container">
-    <form action="modificacion_alumno.php" method="post">
-        <label for="nif">NIF del alumno a modificar:</label><br>
+    <form action="../controlador/modificacion_profesor.php" method="post">
+        <label for="nif">NIF del profesor a modificar:</label><br>
         <input type="text" id="nif" name="nif"><br>
         <label for="nombre">Nuevo nombre (opcional):</label><br>
         <input type="text" id="nombre" name="nombre"><br>
@@ -49,7 +49,7 @@
         <input type="text" id="apellido2" name="apellido2"><br>
         <label for="email">Nuevo email (opcional):</label><br>
         <input type="text" id="email" name="email"><br>
-        <input type="submit" class="btn btn-primary" value="Modificar alumno">
+        <input type="submit" class="btn btn-primary" value="Modificar profesor">
     </form>
 </div>
 

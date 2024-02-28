@@ -28,7 +28,7 @@
 <body>
 <div class="container">
     <h2>Agregar Alumno</h2>
-    <form action="alumno_insertar.php" method="post">
+    <form action="../controlador/alumno_insertar.php" method="post">
         <div class="form-group">
             <label for="nif">Nif:</label>
             <input type="text" class="form-control" id="nif" name="nif" required>
