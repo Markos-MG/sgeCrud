@@ -12,7 +12,7 @@
     <div class="container mt-5">
         <h2>Listado de Profesores</h2>
         <?php
-        include 'conexion.php';
+        include '../conexion.php';
 
         $sql = "SELECT nif, nombre, apellido1, apellido2, email FROM profesor";
         $result = $conn->query($sql);

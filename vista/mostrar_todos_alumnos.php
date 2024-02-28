@@ -11,7 +11,7 @@
     <div class="container mt-5">
         <h2>Listado de Alumnos</h2>
         <?php
-        include 'conexion.php';
+        include '../conexion.php';
 
         $sql = "SELECT NIF, nombre, apellido1, apellido2, email FROM alumno";
         $result = $conn->query($sql);

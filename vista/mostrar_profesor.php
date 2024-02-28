@@ -11,7 +11,7 @@
     <div class="container mt-5">
         <h2>Buscar Profesor</h2>
         <?php
-        include 'conexion.php';
+        include '../conexion.php';
 
         if (isset($_POST['nif'])) {
             $nif = $_POST['nif'];
